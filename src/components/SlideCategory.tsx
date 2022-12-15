@@ -2,7 +2,6 @@ import React from "react";
 import { Navigation} from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import useSlidesView from "./hooks/useSlideView";
 
 const SlideCategory = () => {
 

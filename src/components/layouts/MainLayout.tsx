@@ -31,7 +31,7 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
           isFull={fullSidebar}
           handleHide={() => setOpenSidebar(false)}
         />
-        <div className="flex-1 pr-4">{children}</div>
+        <div className="flex-1 ">{children}</div>
       </div>
     </div>
   );

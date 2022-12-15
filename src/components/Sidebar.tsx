@@ -14,7 +14,6 @@ interface SidebarProps{
 
 const Sidebar:React.FC<SidebarProps> = ({isOpen, handleHide, isFull}) => {
   const router = useRouter();
-  const width = useChangeWidth()
 
 
   return (
@@ -27,7 +26,7 @@ const Sidebar:React.FC<SidebarProps> = ({isOpen, handleHide, isFull}) => {
             return (
               <Link key={item.url} href={item.url}>
                 <div
-                  className={`${!isFull ? 'flex-col justify-center' : router.asPath.indexOf(item.url) != -1 && "bg-gray-200"} flex items-center transition-all hover:cursor-pointer hover:bg-gray-200 rounded-xl py-2 px-4`}
+                  className={`${!isFull ? 'flex-col justify-center' : router.asPath === item.url && "bg-gray-200"} flex items-center transition-all hover:cursor-pointer hover:bg-gray-200 rounded-xl py-2 px-4`}
                 >
                   <Icon width="24px" height="24px" />
                   <span className={`${!isFull ? 'text-[10px] whitespace-nowrap mt-2' : 'text-md  ml-5'}`}>{item.title}</span>

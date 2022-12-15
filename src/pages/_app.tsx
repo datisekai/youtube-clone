@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import "node_modules/video-react/dist/video-react.css"
 
 import "../styles/globals.css";
 
